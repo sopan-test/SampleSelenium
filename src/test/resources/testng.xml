@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="SeleniumDemo" parallel="tests">
+    <listeners>
+        <listener class-name="UI.driver.WebDriverListner"/>
+    </listeners>
+    <test name="SeleniumTest1">
+        <parameter name="browserType" value="chrome"/>
+        <classes>
+            <class name="RoughTest"/>
+        </classes>
+    </test>
+<!--    <test name="SeleniumTest2">
+        <parameter name="browserType" value="firefox"/>
+        <classes>
+            <class name="RoughTest2"/>
+        </classes>
+    </test>-->
+</suite>
